@@ -8,15 +8,42 @@
       <!-- Når ting hører under andre ting, for eksempel her med <main>, hedder det NESTING, og betyder de er to mellemrum længere mod højre -->
     <h1>CatPhotoApp</h1>
       <!-- HEADINGS går fra h1 - h6, hvor h1 er det største -->
+  <section>
+    <!-- <section> bliver brugt til SEO og gør det lettere at se hvad man arbejder med -->
     <h2>Cat Photos</h2>
     <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
       <!-- <p> laver en PARAGRAPH -->
       <!-- <a> er ANCHOR, der kan linke til andre sider med ATTRIBUTEen href, og teksten der bliver vist er det der står mellem <a> og </a>. Med ATTRIBUTEen target="_blank" åbner linket på en ny fane -->
-      <!-- <a></a> kan også sættes ind i for eksempel <p></p> for at lave et link midt i teksten -->
-    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+      <!-- <a></a> kan også sættes ind i for eksempel <p></p> for at lave et link midt i teksten, og ken sættes rundt om <img> for at lave billedet et link -->
+    <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
       <!-- <img> er et VOID ELEMENT, hvilket betyder det ikke har et closing tag -->
       <!-- ATTRIBUTEs er ord man kan sætte i åbnings tagget, der bestemmer noget om dets opførsel. <img src=""> siger hvad linket til billedet der bliver vist er. -->
       <!-- <img alt=""> ATTRIBUTEet er hvad der bliver vist for folk med dårligt syn, eller hvis billedet ikke loader -->
+    </section>
+    <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+          <!-- <ul> er til at lave en UNORDERED LIST, og <li> er til at lave punkter på en hvilken som helst form for liste -->
+      <figure>      
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+        <figcaption>Cats <em>love</em> lasagna.</figcaption>
+          <!-- <figcaption> er til let at lave en overskrift til billedet i <figure> elementet -->
+          <!-- <em> laver tekst kursiv -->
+      </figure>
+        <!-- <figure> er til at have self contained content, og gør det for eksempel lettere at sammensætte et billede med en overskrift -->
+      <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+          <!-- <ol> laver en ordered list, der imodsætning til <ul> sætter tal på tingene inden i -->
+      </section>
   </main>
   </body>
 </html>
