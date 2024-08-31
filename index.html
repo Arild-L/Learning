@@ -1,5 +1,5 @@
 <!--  -->
-<!-- Alt kode er fra freecodecamp.org, jeg har selv tilføjet kommentarer 28 -->
+<!-- Alt kode er fra freecodecamp.org, jeg har selv tilføjet kommentarer 46 -->
 <html>
   <body>
     <!-- Body er der hvor man skriver det meste -->
@@ -43,6 +43,29 @@
           <li>other cats</li>
         </ol>
           <!-- <ol> laver en ordered list, der imodsætning til <ul> sætter tal på tingene inden i -->
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+            <!-- <strong> bliver brugt til at lave tekst bold -->
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <label><input type="radio"> Indoor</label>
+            <!-- type="radio" gør at man kan have flere valg, men kun klan vælge en --!>
+            <!-- <label> gør at man kan klikke på ordet, og den krydser den stadig af --!>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+            <!-- <input> er til at lave en måde hvor folk kan interegere med siden. Det er et void element og et inline element, hvilket betyder den ikke kommer på en ny linje --!>
+            <!-- TYPE attributen er til at vise hvordan inputtet virker, i dette tilfælde til tekst --!>
+            <!-- NAME er der for at man kan tilgå dataen der bliver sendt via ACTION --!>
+            <!-- PLACEHOLDER er det der bliver vist inden der står noget --!>
+            <!-- REQUIRED gør at man ikke kan gå videre uden at udfylde den --!>
+          <button type="submit">Submit</button>
+            <!-- <button> gør at der er en knap, der hvi man ikke skriver andet bare submitter formen. Det er et inline element --!>
+        </form>
+          <!-- <form> er til at skaffe data fra brugere, som mails eller lignende -->
+          <!-- ACTION attributen er til at fortælle hvor dataen skal gemmes --!>
       </section>
   </main>
   </body>
