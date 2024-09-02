@@ -1,5 +1,5 @@
 <!--  -->
-<!-- Alt kode er fra freecodecamp.org, jeg har selv tilføjet kommentarer 46 -->
+<!-- Alt kode er fra freecodecamp.org, jeg har selv tilføjet kommentarer 50 -->
 <html>
   <body>
     <!-- Body er der hvor man skriver det meste -->
@@ -52,9 +52,12 @@
       <section>
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <label><input type="radio"> Indoor</label>
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
             <!-- type="radio" gør at man kan have flere valg, men kun klan vælge en --!>
             <!-- <label> gør at man kan klikke på ordet, og den krydser den stadig af --!>
+            <!-- ID er navnet man givet til elementet, og der kan ikke være flere med samme ID --!>
+            <!-- når to <input type="radio"> har samme navn, kan man kun vælge en af dem. medmindre de har en VALUE bliver navnet vist i dataen, men de skal have VALUE hvis man vil kunne se hvilken der er blevet trykket på --!>
           <input type="text" name="catphotourl" placeholder="cat photo URL" required>
             <!-- <input> er til at lave en måde hvor folk kan interegere med siden. Det er et void element og et inline element, hvilket betyder den ikke kommer på en ny linje --!>
             <!-- TYPE attributen er til at vise hvordan inputtet virker, i dette tilfælde til tekst --!>
