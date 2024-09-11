@@ -1,6 +1,15 @@
-<!--  -->
-<!-- Alt kode er fra freecodecamp.org, jeg har selv tilføjet kommentarer 50 -->
-<html>
+<!DOCTYPE html>
+  <!-- dette er en DECLARATION, der siger at filen er HTML5, den nyeste version af HTML -->
+  <!-- Alt kode er fra freecodecamp.org, jeg har selv tilføjet kommentarer 50 -->
+<html lang="en">
+  <!-- lang="" i <html> siger hvilket sprog siden er på --!>
+  <head>
+    <meta charset="utf-8">
+      <!-- <meta> siger hvordan browseren skal opføre sig, og charset="" siger hvordan teksten skal se ud --!>
+    <title>CatPhotoApp</title>
+      <!-- <title> er hvad der bliver vist som navn oppe på tab'en --!>
+  </head>
+    <!-- det er i <head> hvor der står metadata, så som navnet på dokumentet, og er links til blandt andet CSS filer --!>
   <body>
     <!-- Body er der hvor man skriver det meste -->
   <main>
@@ -52,12 +61,26 @@
       <section>
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
-          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-            <!-- type="radio" gør at man kan have flere valg, men kun klan vælge en --!>
-            <!-- <label> gør at man kan klikke på ordet, og den krydser den stadig af --!>
-            <!-- ID er navnet man givet til elementet, og der kan ikke være flere med samme ID --!>
-            <!-- når to <input type="radio"> har samme navn, kan man kun vælge en af dem. medmindre de har en VALUE bliver navnet vist i dataen, men de skal have VALUE hvis man vil kunne se hvilken der er blevet trykket på --!>
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+              <!-- <legend> bliver brugt til at lave en titel på <fieldset>, ofte en kontekst til hvad man skal skrive i den --!>
+            <label><input checked id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+              <!-- type="radio" gør at man kan have flere valg, men kun klan vælge en --!>
+              <!-- <label> gør at man kan klikke på ordet, og den krydser den stadig af --!>
+              <!-- ID er navnet man givet til elementet, og der kan ikke være flere med samme ID --!>
+              <!-- når to <input type="radio"> har samme navn, kan man kun vælge en af dem. medmindre de har en VALUE bliver navnet vist i dataen, men de skal have VALUE hvis man vil kunne se hvilken der er blevet trykket på --!>
+              <!-- CHECKED gør at den fra starten er krydset af --!>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input checked id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+              <!-- type="checkbox" gør at man kan vælge flere valgmuligheder modsat type="radio" --!>
+              <!-- for="" i et <label> gør at man ikke skal neste det tilhørende <input> i det, hvis for"" i <label> er det samme som id="" i <input> --!>
+          </fieldset>
+            <!-- <fieldset> er et BLOCK-LEVEL element, hvilket betytder det automatisk er på en ny linje. det bliver brugt til at sammensætte sammenhørende inputs og labels i en form --!>
           <input type="text" name="catphotourl" placeholder="cat photo URL" required>
             <!-- <input> er til at lave en måde hvor folk kan interegere med siden. Det er et void element og et inline element, hvilket betyder den ikke kommer på en ny linje --!>
             <!-- TYPE attributen er til at vise hvordan inputtet virker, i dette tilfælde til tekst --!>
@@ -70,6 +93,9 @@
           <!-- <form> er til at skaffe data fra brugere, som mails eller lignende -->
           <!-- ACTION attributen er til at fortælle hvor dataen skal gemmes --!>
       </section>
-  </main>
+    </main>
+    <footer>
+      <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
   </body>
 </html>
